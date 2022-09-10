@@ -169,7 +169,7 @@ console.log(century)
 */
 
 // ---------------- challenge 2 ------------------
-
+/*
 const massMark = 78;
 const heightMark = 1.69;
 let BMIMark = massMark / (heightMark * heightMark)
@@ -186,3 +186,113 @@ if(BMIMark > BMIJohn){
 }else{
     console.log(`John's BMI(${BMIJohn}) is higher than Mark's (${BMIMark})!`)
 }
+*/
+
+/*
+// convertion type variable
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear)
+console.log(inputYear+18)
+console.log(Number(inputYear)+18)
+
+console.log(Number('pin'))
+console.log(typeof NaN)
+console.log(String(26),26)
+
+// type coercion
+console.log('I am ' + 26 + 'years old')
+console.log('23' - '10' -3)
+console.log('23' * '3')
+
+let n = '1' + 1;
+n = n-1;
+console.log(n);
+*/
+
+/*
+// 5 false have 0,'',NaN,null,undefined
+const money = undefined;
+if (money) {
+    console.log("Don't spend it all")
+} else {
+    console.log("you should get a job")
+}
+*/
+
+/*
+const age = '18';
+if(age === 18){
+    console.log('you just became an adult:D (strict)')
+}
+
+if(age == 18){
+    console.log('you just became an adult:D (loose)')
+}
+
+const favourite = Number(prompt('what is your favourite number?'))
+console.log(favourite)
+console.log(typeof favourite)
+
+if (favourite === 23) {
+    console.log('cool 23')
+} else if(favourite === 7){
+    console.log('cool 7')
+} else if(favourite === 9){
+    console.log('cool 9')
+}else {
+    console.log('not cool 23 or 7 or 9')
+}
+
+if (favourite !== 23) console.log('why not 23')
+*/
+/*
+// logical operator
+const hasDrivesLicense = true; // A
+const hasGoodVision = true;  // B
+console.log(hasDrivesLicense && hasGoodVision);
+console.log(hasDrivesLicense || hasGoodVision);
+console.log(!hasDrivesLicense)
+
+// if(hasDrivesLicense && hasGoodVision){
+//     console.log("sarah is able to drive!")
+// }else{
+//     console.log('someone else should drive')
+// }
+
+const isTired = false;// C
+console.log(hasDrivesLicense && hasGoodVision && isTired);
+
+if(hasDrivesLicense && hasGoodVision && !isTired){
+    console.log("sarah is able to drive!")
+}else{
+    console.log('someone else should drive')
+}
+*/
+
+// ------------- Coding Challenge #3 --------------------------
+/*
+const Dolphins = (96 + 108 + 89) / 3;
+const Koalas = (88 + 91 + 110) / 3;
+if (Dolphins > Koalas) {
+    console.log(`Dolphins is Winner Score: ${Dolphins}`)
+} else if(Koalas > Dolphins){
+    console.log(`Koals is Winner Score ${Koalas}`)
+} else {
+    console.log('draw means they have the same average score')
+}
+
+// Bonus1
+const Dolphins = (96 + 108 + 89) / 3;
+const Koalas = (88 + 91 + 110) / 3;
+if (Dolphins > Koalas && Dolphins >= 100) {
+    console.log(`Dolphins is Winner Score: ${Dolphins}`)
+} else if(Koalas > Dolphins && Koalas >= 100){
+    console.log(`Koals is Winner Score ${Koalas}`)
+} else if (Dolphins === Koalas && Dolphins >= 100 && Koalas >= 100) {
+    console.log('draw means they have the same average score')
+}else{
+    console.log('Both is not condition')
+}
+
+*/
+
