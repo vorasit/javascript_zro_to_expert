@@ -296,3 +296,55 @@ if (Dolphins > Koalas && Dolphins >= 100) {
 
 */
 
+/*
+//--------- switch -------------
+const day = 'monday';
+switch (day) {
+    case 'monday':
+        console.log('monday is fun');
+        break;
+    case 'tuesday':
+        console.log('tuesday is good');
+        break;
+    case 'wednesday':
+        console.log('wednesday is ok');
+        break;
+    case 'thursday':
+        console.log('thursday is orange');
+        break;
+    case 'friday':
+        console.log('friday is sky');
+        break;
+    case 'saturday':
+        console.log('saturday is viored');
+        break;
+    case 'sunday':
+        console.log('sunday is red');
+        break;
+    default:
+        console.log('Not a valid day!');
+        break;
+}
+*/
+
+/*
+const day = 'monday';
+if(day === 'monday'){
+    console.log('monday is fun');
+}else if(day === 'tuesday'){
+    console.log('tuesday is good');
+}else if(day === 'wednesday'){
+    console.log('wednesday is ok');
+}else if(day === 'thursday'){
+    console.log('thursday is orange');
+}else if(day === 'friday'){
+    console.log('friday is sky');
+}else if(day === 'saturday'){
+    console.log('saturday is viored');
+}else if(day === 'sunday'){
+    console.log('sunday is red');
+}else{
+    console.log('Not a valid day!');
+}
+*/
+
