@@ -220,3 +220,124 @@ console.log(tips)
 console.log(total)
 */
 
+/*
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael','Peter','Steven']
+];
+// object
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael','Peter','Steven']
+}
+*/
+
+/*
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael','Peter','Steven']
+}
+console.log(jonas)
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey])
+console.log(jonas['last' + nameKey])
+
+const interestedIn = prompt('what do you to know about Jonas? Choose between firstName,lastName,age,job,and friends');
+if (jonas[interestedIn]) {
+    console.log(jonas[interestedIn]);
+}else{
+    console.log('wrong request Choose between firstName,lastName,age,job,and friends')
+}
+
+jonas.location = 'Portugal';
+jonas['twitter'] = '@jonaschmedtman';
+console.log(jonas)
+
+// challenge
+// jonas has 3 friends and his best friends is called Michael
+const j1 = jonas.friends  
+// jonas.friends[0]
+console.log(j1[0]);
+
+*/
+
+/*
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    birthYeah: 1991,
+    job: 'teacher',
+    friends: ['Michael','Peter','Steven'],
+    hasDriversLicense: true,
+
+    //calcAge: function(birthYeah){
+    //    return 2037 - birthYeah;
+    //}
+    
+    //calcAge: function(){
+    //    console.log(this) // show obj attribute
+    //    return 2037 - this.birthYeah;
+    //}
+    
+    calcAge: function(){
+        this.age = 2037 - this.birthYeah;
+        return this.age;
+    },
+
+    getSummary: function(){
+        return `${this.firstName} is a ${this.calcAge()} -year old ${this.job},and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's License `;
+    },
+
+};
+
+console.log(jonas.calcAge());
+//console.log(jonas['calcAge'](1991));
+console.log(jonas.age);
+console.log(jonas.getSummary());
+
+*/
+
+// ------------ Coding Challenge #3 ------------------------------
+/*
+// obj mark
+const Mark = {
+    fullname: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function(){
+        this.BMI = this.mass/(this.height**2)
+        return this.BMI
+    }
+};
+
+// obj john
+const John = {
+    fullname: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function(){
+        this.BMI = this.mass/(this.height**2)
+        return this.BMI
+    }
+};
+
+if (Mark.calcBMI() > John.calcBMI() ) {
+    console.log(`Mark's BMI (${Mark.calcBMI()}) is higher than John's (${John.calcBMI()})! `);
+}else if(John.calcBMI() > Mark.calcBMI()){
+    console.log(`John's BMI (${John.calcBMI()}) is higher than Mark's (${Mark.calcBMI()})! `);
+}
+
+*/
+
