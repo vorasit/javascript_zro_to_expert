@@ -341,3 +341,139 @@ if (Mark.calcBMI() > John.calcBMI() ) {
 
 */
 
+/*
+// for statement
+for(let rep = 1; rep <= 10; rep++){ 
+    console.log(`Lifiting weights repetition ${rep} `);
+}
+*/
+
+/*
+const jonas = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael','Peter','Steven'],
+    true
+];
+
+const types = [];
+
+for(let i=0.; i<jonas.length ;i++){
+    console.log(jonas[i], typeof jonas[i]);
+
+    // Filling types array
+    // types[i] = typeof jonas[i];
+    types.push(typeof jonas[i]);
+}
+console.log(types);
+
+const years = [1991,2007,1969,2020];
+const ages = [];
+
+for(let i=0; i<years.length; i++){
+    ages.push(2037 - years[i]);
+}
+console.log(ages)
+
+// continue and break
+console.log('---------ONLY STRING------------');
+for(let i=0.; i<jonas.length ;i++){
+    if(typeof jonas[i] !== 'string'){
+        continue;
+    }
+    console.log(jonas[i], typeof jonas[i]);
+}
+
+console.log('---------BREAK WITH NUMBER------------');
+for(let i=0.; i<jonas.length ;i++){
+    if(typeof jonas[i] !== 'number'){
+        break;
+    }
+    console.log(jonas[i], typeof jonas[i]);
+}
+ 
+*/
+
+/*
+const jonas = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael','Peter','Steven'],
+    true
+];
+
+// 4,3,2,...,0
+for (let i = jonas.length - 1; i >= 0; i--) {
+    console.log(i ,jonas[i])
+}
+
+for(let exercise = 1; exercise < 4 ; exercise++){
+    console.log(`-------------Starting exercise ${exercise}`);
+    for(let rep=1; rep<6;rep++){
+        console.log(`Exercise ${exercise}:Lifting weight repetition ${rep}`);
+    }
+}
+*/
+
+/*
+// while
+let rep=1;
+while(rep <= 10){
+    //console.log(`WHILE: Lifting weight repetition ${rep}`);
+    rep++;
+}
+
+let dice = Math.trunc(Math.random()*6)+1;
+console.log(dice);
+
+while (dice !== 6){
+    console.log(`You rolled a ${dice}`)
+    dice = Math.trunc(Math.random()*6)+1;
+    if (dice === 6) console.log('Loop is about to end....');
+}
+*/
+
+// ------------ Coding Challenge #4 ------------------------------
+/*
+const bills = [ 22, 295, 176, 440, 37, 105, 10, 1100, 86 ,52];
+let tips = [];
+let totals = [];
+let i = 0;
+function calcTip(bills) {
+    while(i < bills.length)
+    {
+        if (bills[i] >= 50 && bills[i] <=300) {
+            tips.push(bills[i]*0.15);
+            totals.push(bills[i] + tips[i])
+        } else {
+            tips.push(bills[i]*0.20);
+            totals.push(bills[i] + tips[i])
+        }
+        i++;
+    }
+    return totals;
+}
+
+
+console.log(` totals = ${calcTip(bills)}`);
+console.log(` tips = ${tips}`);
+
+let sum = 0;
+let j = 0;
+function calcAverage(arr){
+    while(j<arr.length){
+        sum = sum + arr[j];
+        j++;
+    }
+    return sum/totals.length;
+}
+
+const avg = calcAverage(totals);
+console.log(` average = ${avg}`)
+console.log(totals.length)
+*/
+
